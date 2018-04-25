@@ -9,6 +9,7 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 6,
         sourceType: "module",
+        experimentalObjectRestSpread: true,
     },
     rules: {
         "comma-dangle": ["error", "always-multiline"],

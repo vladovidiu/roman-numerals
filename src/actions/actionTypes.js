@@ -1,2 +1,0 @@
-export const CONVERT_TO_ARABIC = "CONVERT_TO_ARABIC";
-export const CONVERT_TO_ROMAN = "CONVERT_TO_ROMAN";
