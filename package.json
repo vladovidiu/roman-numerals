@@ -1,16 +1,32 @@
 {
-  "name": "roman-numerals",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "name": "roman-numerals",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "express": "^4.16.3",
+        "react": "^16.3.2",
+        "react-dom": "^16.3.2",
+        "react-scripts": "1.1.4"
+    },
+    "scripts": {
+        "start": "npm-run-all --parallel start:server start:client",
+        "start:client": "react-scripts start",
+        "start:server": "node src/server.js",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "devDependencies": {
+        "eslint": "^4.19.1",
+        "eslint-config-eslint": "^4.0.0",
+        "eslint-config-google": "^0.9.1",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-prettier": "^2.6.0",
+        "eslint-plugin-react": "^7.7.0",
+        "husky": "^0.14.3",
+        "lint-staged": "^7.0.4",
+        "npm-run-all": "^4.1.2",
+        "prettier": "^1.12.1"
+    }
 }
