@@ -1,0 +1,38 @@
+FORMAT: 1A
+
+# YNAP API
+API Blueprint exposing the REST API on `http://localhost:3001/api`
+
+# Group Converter
+
+## Converter [/api]
+
+### Convert to Roman Literal [POST /api/get-roman]
+Returns the roman literal conversion of a numeric value
++ Body
+```json
+{
+    "value": 10
+}
+```
++ Response 200 (application/json)
+```json
+    {
+        "romanValue": "X"
+    }
+```
+
+### Convert to Arabic Number [POST /api/get-numeric]
+Returns the arabic number of a roman literal
++ Body
+```json
+{
+    "value": "XX"
+}
+```
++ Response 200 (application/json)
+```json
+    {
+        "arabicValue": "20"
+    }
+```

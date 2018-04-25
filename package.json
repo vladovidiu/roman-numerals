@@ -17,12 +17,14 @@
         "test:server": "mocha ./src/lib/__tests__ --recursive --exit",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject",
-        "precommit": "lint-staged"
+        "precommit": "lint-staged",
+        "docs": "aglio -i ./docs/blueprint.apib -o blueprint.html"
     },
     "lint-staged": {
         "*.js": ["prettier --write", "git add"]
     },
     "devDependencies": {
+        "aglio": "^2.3.0",
         "chai": "^4.1.2",
         "eslint": "^4.19.1",
         "eslint-config-eslint": "^4.0.0",
