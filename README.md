@@ -6,9 +6,9 @@ To make the algorithm easier to follow I decided to add the 'IX' or 'VI' values 
 
 *   toRoman -> iterates over all numbers and builds up roman literal while input value is bigger than the a number;
 *   *   Big O: O(1 \* n); the numbers array is constant; the number to check is less than 4000, but let's assume it can be bigger, thus:
-*   *   O(n)
+*   *   O(n) - n length of the number
 *   toArabic -> iterates again over the numbers, and checks if the input has as a substring one of the values from the roman literals array, but maintaing the same index. If it does it adds to the result and removes the found substring;
-*   *   Same worst case scenario as for toRoman: O(n)
+*   *   Same worst case scenario as for toRoman: O(n) - n length of the string
 
 ### Prerequisites
 
