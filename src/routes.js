@@ -18,7 +18,7 @@ routes
             const result = toArabic(value);
             res.status(200);
             res.json({
-                arabicValue: result,
+                returnValue: result,
             });
         } else {
             res.status(400);
@@ -44,7 +44,7 @@ routes
 
         res.status(200);
         res.json({
-            romanValue: result,
+            returnValue: result,
         });
 
         next();

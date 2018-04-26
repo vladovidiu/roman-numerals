@@ -2,8 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Header = ({appName}) => (
-    <nav className="navbar navbar-light bg-info">
-        <span className="navbar-brand mb-0 h1">{appName}</span>
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+        <a className="navbar-brand" href="#">
+            {appName}
+        </a>
     </nav>
 );
 

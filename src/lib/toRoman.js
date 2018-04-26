@@ -10,6 +10,7 @@ const {numbers, romanLiterals} = require("./common");
 const toRoman = numericValue => {
     let result = "";
     let numberToConvert = numericValue;
+
     numbers.map((number, index) => {
         while (numberToConvert >= number) {
             result += romanLiterals[index];
